@@ -33,9 +33,9 @@ This repository provides a basic demonstration of how to connect to the **GoCard
      python api-token.py
      ```
 
-   - **`add-account.py`**: Adds an account by creating a requisition. You will need to follow a link for verification and approval.
+   - **`add-requisition.py`**: Adds an account by creating a requisition. You will need to follow a link for verification and approval.
      ```bash
-     python add-account.py
+     python add-requisition.py
      ```
 
    - **`show-requisitions.py`**: Retrieves and displays all requisitions, including account details if available.
@@ -58,7 +58,7 @@ This repository provides a basic demonstration of how to connect to the **GoCard
 ### **File Descriptions**
 
 - **`account-info.py`**: Retrieves details for a given account (IBAN, Owner, Currency). You will need to provide an account ID.
-- **`add-account.py`**: Starts the process of adding an account by creating a requisition. You will receive a verification URL that you must follow to complete the process.
+- **`add-requisition.py`**: Starts the process of adding an account by creating a requisition. You will receive a verification URL that you must follow to complete the process.
 - **`api-token.py`**: This script generates an authentication token that you need to use in the other scripts.
 - **`delete-requisition.py`**: Prompts for a requisition ID and deletes the corresponding requisition. This is useful when you need to clean up test requisitions.
 - **`show-requisitions.py`**: Lists all requisitions created in your GoCardless account, including the associated accounts (e.g., EUR, USD).
