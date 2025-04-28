@@ -33,7 +33,7 @@ This repository provides a basic demonstration of how to connect to the **GoCard
      python api-token.py
      ```
 
-   - **`add-requisition.py`**: Adds an account by creating a requisition. You will need to follow a link for verification and approval.
+   - **`add-requisition.py`**: Adds accounts by creating a requisition. You will need to follow a link for verification and approval.
      ```bash
      python add-requisition.py
      ```
@@ -52,6 +52,21 @@ This repository provides a basic demonstration of how to connect to the **GoCard
      ```bash
      python account-info.py
      ```
+
+---
+
+### **Requisitions and Accounts**
+
+A **requisition** in the GoCardless system represents a request to link a bank account to the system for verification and processing. It can be seen as the **bank** that is being integrated into GoCardless, for example, **Revolut**.
+
+An **account** is a specific currency account within a requisition. For example, within a **Revolut** requisition, you might have multiple accounts in different currencies, such as:
+- **Revolut EUR**
+- **Revolut USD**
+- **Revolut GBP**
+
+The relationship between **requisitions** and **accounts** is that each requisition corresponds to a specific **bank** or **financial institution**. Within this requisition, you can have multiple accounts associated with different **currencies** or purposes. When creating a requisition, the system will return an authorization URL for account verification. Once verified, you can access the accounts linked to that requisition and retrieve details for each one.
+
+Thus, a **requisition** is the higher-level entity representing the bank or financial institution, and **accounts** are the specific currency-based accounts within that institution.
 
 ---
 
