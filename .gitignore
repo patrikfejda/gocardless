@@ -1,2 +1,9 @@
 
 .DS_Store
+
+# secrets
+credentials/*.json
+!credentials/*.example.json
+.env
+.env.*
+!.env.example
